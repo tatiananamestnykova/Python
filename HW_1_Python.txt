@@ -1,0 +1,83 @@
+Python. HW_1
+
+1) Создать переменную типа String = 
+name = 'Egor'
+2) Создать переменную типа Integer=
+age = 12     
+3) Создать переменную типа Float=
+height = 162.5
+4) Создать переменную типа Bytes=
+byt = bytes(100)
+ 5) Создать переменную типа List=
+list = ['Egor', 12, 162.5]
+6) Создать переменную типа Tuple=
+tuple = ('Egor',12, 23.11)
+7) Создать переменную типа Set=
+set = {1, 2, 2, 'data', 'data'}
+8. Создать переменную типа Frozen set=
+froz = frozenset({"hello", "Python"})
+9) Создать переменную типа Dict=
+dict = {"one": "This is one"}             
+
+10) Вывести в консоль все выше перечисленные переменные с добавлением типа данных=
+print(type(name))      #<class 'str'>
+print(type(age))       #<class 'int'>
+print(type(height))    #<class 'float'>
+print(type(byt))       #<class 'bytes'>
+print(type(list))      #<class 'list'>
+print(type(tuple))     #<class 'tuple'>
+print(type(set))       #<class 'set'>
+print(type(froz))      #<class 'frozenset'>
+print(type(dict))      #<class 'dict'>
+
+11) Создать 2 переменные String, создать переменную в которой суммируете эти переменные. Вывести в консоль=
+country = "Ukraine"
+city = "Kharkov"
+motherland = country+city
+print(motherland)   #UkraineKharkov
+
+12.1) Вывести в одну строку переменные типа String и Integer используя “,” (Запятую). Вывести в консоль=
+rose = 'flower'
+quantity = 3
+bouquet = (rose , quantity)
+print(bouquet) #('flower', 3)
+
+12.2) Вывести в одну строку переменные типа String и Integer используя “+” (Плюс). Вывести в консоль=
+rose = 'flower'
+quantity = '3'
+flowers = ('rose' + quantity)
+print(flowers)   #rose3
+
+13) Создать переменную в которой Разделите эти переменные Int. Вывести в консоль=
+q = 100
+w = 5
+e = q/w
+print(e)  #20
+
+14) Создать переменную в которой Умножите эти переменные Int. Вывести в консоль=
+q = 100
+w = 5
+r = q * w
+print(r)  #500
+15) Создать переменную в которой Разделите без остатка эти переменные Int. Вывести в консоль=
+t = 25
+s = 6
+g = t/s
+print(int(g)) #4
+ИЛИ
+cat_1 = 30
+cat_2 = 7
+res = cat_1 // cat_2
+print(res)
+
+16) Создать переменную в которой надо присвоить остаток от деления этих переменные Int. Вывести в консоль=
+n = 17
+k = 5
+v = n % k
+print(v)
+
+17) (7 + 12)  3 + 7 * 4 - 44 / 2  4 расставить точки так чтобы получилось 6884.25. Вывести в консоль=
+z = (7 + 12) ** 3 + 7 * 4 - 44 / 2 ** 4
+print(z)
+
+Выгрузить файл в Git репозиторий.
