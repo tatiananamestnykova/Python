@@ -1,50 +1,53 @@
-name = 'Egor'
-age = 12
-height = 162.5
-byt = bytes(100)
-list = ['Egor', 12, 162.5]
-tuple = ('Egor', 12, 23.11)
-set = {1, 2, 2, 'data', 'data'}
-froz = frozenset({"hello", "Python"})
-dict = {"one": "This is one"}
-print(type(name))
-print(type(age))
-print(type(height))
-print(type(byt))
-print(type(list))
-print(type(tuple))
-print(type(set))
-print(type(froz))
-print(type(dict))
+HW_1 = 'Python'
+print(HW_1)
+name = "Egor" #1.Создать переменную типа String
+age = 12 #2.Создать переменную типа Integer
+height = 162.5 #3.Создать переменную типа Float
+byt = bytes(100) #4.Создать переменную типа Bytes
+list = ['Egor', 12, 162.5] #5.Создать переменную типа List
+tuple = ('Egor',12, 23.11) #6.Создать переменную типа Tuple
+set = {1, 2, 2, 'data', 'data'} #7.Создать переменную типа Set
+froz = frozenset({"hello", "Python"}) #8.Создать переменную типа Frozen set
+dict = {"one": "This is one"} #9. Создать переменную типа Dict
+
+print('name=',type(name))
+print('age=',type(age))
+print('height=',type(height))
+print('byt=',type(byt))
+print('list=',type(list))
+print('tuple=',type(tuple))
+print('set=',type(set))
+print('froz=',type(froz))
+print('dict=',type(dict))
+
 country = "Ukraine"
 city = "Kharkov"
 motherland = country+city
 print(motherland)
-rose = 'flower'
-quantity = '3'
-bouquet = (rose , quantity)
-print(bouquet)
-flowers = ('rose' + quantity)
-print(flowers)
-q = 100
-w = 5
-e = q/w
+
+a = 7
+b = 6
+c = a + b
+print(c)
+
+print('name=',',','age=')
+
+d = a/b
+print(d)
+
+print('name=' ,'+', 'age=')
+
+n = a*b
+print(n)
+
+k= a/b
+print(int(k))
+
+h = a//b
+print(int(h))
+
+e = a % b
 print(e)
-r = q * w
-print(r)
-t = 25
-s = 6
-g = t/s
-print(int(g))
-cat_1 = 30
-cat_2 = 7
-res = cat_1 // cat_2
-print(res)
-n = 17
-k = 5
-v = n % k
-print(v)
+
 z = (7 + 12) ** 3 + 7 * 4 - 44 / 2 ** 4
-print(z)
-
-
+print(z) #6884.25
