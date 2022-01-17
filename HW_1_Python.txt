@@ -11,56 +11,55 @@ froz = frozenset({"hello", "Python"})  #8.Создать переменную типа Frozen set
 dict = {"one": "This is one"}  #9. Создать переменную типа Dict
 
 10. Вывести в консоль все выше перечисленные переменные с добавлением типа данных:
-print('name=', name, type(name)) 
-print('age=', age, type(age))
-print('height=', height, type(height))
-print('byt=', byt, type(byt))
-print('list=', list, type(list))
-print('tuple=', tuple, type(tuple))
-print('set=', set, type(set))
-print('froz=', froz, type(froz))
-print('dict=', dict, type(dict))
+print('name=', name, type(name))  #name= Egor <class 'str'>        
+print('age=', age, type(age))  #age= 12 <class 'int'>
+print('height=', height, type(height))  #height= 162.5 <class 'float'>
+print('byt=', byt, type(byt))  #b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00' <class 'bytes'>
+print('list=', list, type(list))  #list= ['Egor', 12, 162.5] <class 'list'>
+print('tuple=', tuple, type(tuple))  #tuple= ('Egor', 12, 23.11) <class 'tuple'>
+print('set=', set, type(set))  #set= {1, 2, 'data'} <class 'set'>
+print('froz=', froz, type(froz))  #froz= frozenset({'hello', 'Python'}) <class 'frozenset'>
+print('dict=', dict, type(dict))  #dict= {'one': 'This is one'} <class 'dict'>
 
 11.Cоздать 2 переменные String, создать переменную в которой (сканкатенируете) суммируете эти переменные.
 Вывести в консоль
 country = "Ukraine"
 city = "Kharkov"
 motherland = country+city
-print(motherland)
+print(motherland)  #UkraineKharkov
 
 12.1.Создать 2 переменные Integer, создать переменную в которой суммируете эти переменные.
 Вывести в консоль:
 a = 7
 b = 6
 c = a + b
-print(c)
+print(c)  #13
 
 12.2.Вывести в одну строку переменные типа String и Integer используя “,” (Запятую):
-print(name, age)
+print(name, age)  #Egor 12
 
 13.1.Создать переменную в которой Разделите эти переменные Int.
 Вывести в консоль:
 d = a/b
-print(d)
+print(d)  #1.1666666666666667
 
 13.2.Вывести в одну строку переменные типа String и Integer используя “+” (Плюс):
-print(name+age)
+print('name'+'age')  #nameage
 
 14. Создать переменную в которой Умножите эти переменные Int.
 Вывести в консоль:
 n = a*b
-print(n)
+print(n)  #42
 
 15.Создать переменную в которой Разделите без остатка эти переменные Int.
 Вывести в консоль:
-int(12.4)
-round(12.4)
-math.floor(13.8)
-math.ceil(13.8)
+int(12.4)  #1
+round(12.4)  #1
+
 16.Создать переменную в которой надо присвоить остаток от деления этих переменные Int.
 Вывести в консоль:
 e = a % b
-print(e)
+print(e)  #1
 
 17. (7 + 12)  3 + 7 * 4 - 44 / 2  4 расставить точки так чтобы получилось 6884.25.
 Вывести в консоль:
