@@ -1,25 +1,25 @@
 Python. HW_1
 
-name = "Egor" #1.Создать переменную типа String
-age = 12 #2.Создать переменную типа Integer
-height = 162.5 #3.Создать переменную типа Float
-byt = bytes(100) #4.Создать переменную типа Bytes
-list = ['Egor', 12, 162.5] #5.Создать переменную типа List
-tuple = ('Egor',12, 23.11) #6.Создать переменную типа Tuple
-set = {1, 2, 2, 'data', 'data'} #7.Создать переменную типа Set
-froz = frozenset({"hello", "Python"}) #8.Создать переменную типа Frozen set
-dict = {"one": "This is one"} #9. Создать переменную типа Dict
+name = "Egor"  #1.Создать переменную типа String
+age = 12  #2.Создать переменную типа Integer
+height = 162.5  #3.Создать переменную типа Float
+byt = bytes(100)  #4.Создать переменную типа Bytes
+list = ['Egor', 12, 162.5]  #5.Создать переменную типа List
+tuple = ('Egor', 12, 23.11)  #6.Создать переменную типа Tuple
+set = {1, 2, 2, 'data', 'data'}  #7.Создать переменную типа Set
+froz = frozenset({"hello", "Python"})  #8.Создать переменную типа Frozen set
+dict = {"one": "This is one"}  #9. Создать переменную типа Dict
 
 10. Вывести в консоль все выше перечисленные переменные с добавлением типа данных:
-print('name=',type(name)) 
-print('age=',type(age))
-print('height=',type(height))
-print('byt=',type(byt))
-print('list=',type(list))
-print('tuple=',type(tuple))
-print('set=',type(set))
-print('froz=',type(froz))
-print('dict=',type(dict))
+print('name=', name, type(name)) 
+print('age=', age, type(age))
+print('height=', height, type(height))
+print('byt=', byt, type(byt))
+print('list=', list, type(list))
+print('tuple=', tuple, type(tuple))
+print('set=', set, type(set))
+print('froz=', froz, type(froz))
+print('dict=', dict, type(dict))
 
 11.Cоздать 2 переменные String, создать переменную в которой (сканкатенируете) суммируете эти переменные.
 Вывести в консоль
@@ -36,7 +36,7 @@ c = a + b
 print(c)
 
 12.2.Вывести в одну строку переменные типа String и Integer используя “,” (Запятую):
-print('name=',',','age=')
+print(name, age)
 
 13.1.Создать переменную в которой Разделите эти переменные Int.
 Вывести в консоль:
@@ -44,7 +44,7 @@ d = a/b
 print(d)
 
 13.2.Вывести в одну строку переменные типа String и Integer используя “+” (Плюс):
-print('name=',',+,'age=')
+print(name+age)
 
 14. Создать переменную в которой Умножите эти переменные Int.
 Вывести в консоль:
@@ -53,12 +53,10 @@ print(n)
 
 15.Создать переменную в которой Разделите без остатка эти переменные Int.
 Вывести в консоль:
-k= a/b
-print(int(k))
-или
-h = a//b
-print(int(h))
-
+int(12.4)
+round(12.4)
+math.floor(13.8)
+math.ceil(13.8)
 16.Создать переменную в которой надо присвоить остаток от деления этих переменные Int.
 Вывести в консоль:
 e = a % b

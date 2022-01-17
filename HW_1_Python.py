@@ -10,15 +10,15 @@ set = {1, 2, 2, 'data', 'data'} #7.Создать переменную типа 
 froz = frozenset({"hello", "Python"}) #8.Создать переменную типа Frozen set
 dict = {"one": "This is one"} #9. Создать переменную типа Dict
 
-print('name=',type(name))
-print('age=',type(age))
-print('height=',type(height))
-print('byt=',type(byt))
-print('list=',type(list))
-print('tuple=',type(tuple))
-print('set=',type(set))
-print('froz=',type(froz))
-print('dict=',type(dict))
+print('name=', name, type(name))
+print('age=', age, type(age))
+print('height=', height, type(height))
+print('byt=', byt, type(byt))
+print('list=', list, type(list))
+print('tuple=', tuple, type(tuple))
+print('set=', set, type(set))
+print('froz=', froz, type(froz))
+print('dict=', dict, type(dict))
 
 country = "Ukraine"
 city = "Kharkov"
@@ -30,21 +30,20 @@ b = 6
 c = a + b
 print(c)
 
-print('name=',',','age=')
+print(name, age)
 
 d = a/b
 print(d)
 
-print('name=' ,'+', 'age=')
+print(name+age)
 
 n = a*b
 print(n)
 
-k= a/b
-print(int(k))
-
-h = a//b
-print(int(h))
+int(12.4)
+round(12.4)
+math.floor(13.8)
+math.ceil(13.8)
 
 e = a % b
 print(e)
