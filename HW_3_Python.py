@@ -118,50 +118,39 @@ currency_convertor = item_2
 #   31.2 Создать переменную target_currency со значением eur_item,
 #   31.3 Создать переменную target_currency_amount значением 50,
 #   31.4 Создать переменную currency_result со значением 0
+# 31.4 Сделать if в котором будет условие: если target_currency равен ‘eur’, то в теле этого if в
+# значении переменной currency_result высчитать сколько долларов получится при target_currency_amount и usd_eur_rate.
+# Результат вывести в консоль (target_currency_amount, eur_item, “=”, currency_result, usd_item):
+# 31.5 Сделать elif в котором будет условие: если target_currency равен ‘uah’, то в теле этого if
+# в значении переменной currency_result высчитать сколько долларов получится при target_currency_amount
+# и usd_uah_rate. Результат вывести в консоль (target_currency_amount, usd_item, “=”, currency_result, uah_item):
+# 31.6 Сделать elif с остальными валютами:
+# 31.7 Последним оставить else, при выполнений которого в консоль выведется (“Unknow currency”)
 
 if currency_convertor:
     currency_usd = usd_item
     target_currency = eur_item
     target_currency_amount = 50
     currency_result = 0
-    target_currency = uah_item
-    target_currency = chf_item
-    target_currency = rub_item
-    target_currency = byn_item
-else:
-    print('currency_convertor = ', item_3)
+    if target_currency == 'eur':
+       currency_result = target_currency_amount / usd_eur_rate
+       print(target_currency_amount, eur_item, '=', currency_result, usd_item)
+    elif target_currency == 'uah':
+        currency_result = target_currency_amount * usd_uah_rate
+        print(target_currency_amount, usd_item, '=', currency_result, uah_item)
+    elif target_currency == 'chf':
+        currency_result = target_currency_amount * usd_chf_rate
+        print(target_currency_amount, usd_item, '=', currency_result, chf_item)
+    elif target_currency == 'rub':
+        currency_result = target_currency_amount * usd_rub_rate
+        print(target_currency_amount, usd_item, '=', currency_result, rub_item)
+    elif target_currency == 'byn':
+         currency_result = target_currency_amount * usd_byn_rate
+         print(target_currency_amount, usd_item, '=', currency_result, byn_item)
+    else:
+         print('Unknow currency')
+# 50 eur = 58.139534883720934 usd
+# Для того, чтобы задать условие конвертации другое в строке 132, поменяем значение
+# target_currency = uah_item или др.
 
-# 31.4 Сделать if в котором будет условие: если target_currency равен ‘eur’, то в теле этого if в
-# значении переменной currency_result высчитать сколько долларов получится при target_currency_amount и usd_eur_rate.
-# Результат вывести в консоль (target_currency_amount, eur_item, “=”, currency_result, usd_item):
 
-if    target_currency == 'eur':
-      currency_result = target_currency_amount * usd_eur_rate
-      print(target_currency_amount, eur_item, '=', currency_result, usd_item)
-# 50 eur = 43.0 usd
-
-# 31.5 Сделать elif в котором будет условие: если target_currency равен ‘uah’, то в теле этого if
-# в значении переменной currency_result высчитать сколько долларов получится при target_currency_amount
-# и usd_uah_rate. Результат вывести в консоль (target_currency_amount, usd_item, “=”, currency_result, uah_item):
-
-if target_currency == 'uah':
-   currency_result = target_currency_amount * usd_uah_rate
-print(target_currency_amount, usd_item, '=', currency_result, uah_item)
-# 50 usd = 1311.5 uah
-# 31.6 Сделать elif с остальными валютами:
-
-if target_currency == 'chf':
-    currency_result = target_currency_amount * usd_chf_rate
-print(target_currency_amount, usd_item, '=', currency_result, chf_item)
-# 50 usd = 45.5 chf
-if target_currency == 'rub':
-    currency_result = target_currency_amount * usd_rub_rate
-print(target_currency_amount, usd_item, '=', currency_result, rub_item)
-# 50 usd = 3594.0 rub
-if target_currency == 'byn':
-     currency_result = target_currency_amount * usd_byn_rate
-print(target_currency_amount, usd_item, '=', currency_result, byn_item)
-# 50 usd = 123.0 byn
-# 31.7 Последним оставить else, при выполнений которого в консоль выведется (“Unknow currency”):
-# else:
-# print('Unknow currency')
