@@ -31,7 +31,7 @@ elif c == 'div' and b==0:
     print("Деление на 0!")
 elif c == 'div' and b!=0:
     print(a//b)
-    
+
 # 3
 # 4
 # *
